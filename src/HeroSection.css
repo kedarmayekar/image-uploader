@@ -1,0 +1,29 @@
+/* HeroSection.css */
+
+.hero-section {
+    position: relative;
+    height: 100vh; /* Set the height of the hero section to the full viewport height */
+    background-image: url('/images/pexels-janez-podnar-1424239.jpg');
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Set text color to white, adjust as needed */
+  
+    /* Add additional styles for overlay, if desired */
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  /* Add responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .hero-section {
+      background-position: top; /* Adjust background position for smaller screens */
+    }
+  }
+  
