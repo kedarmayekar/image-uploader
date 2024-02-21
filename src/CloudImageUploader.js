@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CloudImageUploader.css';
 
 const CloudImageUploader = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -34,9 +35,9 @@ const CloudImageUploader = () => {
   };
 
   return (
-    <div>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleUploadClick} disabled={!selectedImage}>
+    <div className="cloud-image-uploader">
+      <input className='browse_image' type="file" onChange={handleFileChange} />
+      <button className='upload_image' onClick={handleUploadClick} disabled={!selectedImage}>
         Upload Image
       </button>
       {uploadStatus && <p>{uploadStatus}</p>}
