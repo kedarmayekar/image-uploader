@@ -25,6 +25,8 @@ const CloudImageUploader = () => {
 
       if (response.ok) {
         setUploadStatus('Image uploaded successfully!');
+        document.getElementsByClassName('browse_image')[0].value = null;
+        setSelectedImage(null);
       } else {
         setUploadStatus('Error uploading image: ' + data.message);
       }
@@ -44,5 +46,6 @@ const CloudImageUploader = () => {
     </div>
   );
 };
+
 
 export default CloudImageUploader;
