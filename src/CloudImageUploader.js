@@ -30,6 +30,9 @@ const CloudImageUploader = () => {
       } else {
         setUploadStatus('Error uploading image: ' + data.message);
       }
+      setTimeout(() => {
+        setUploadStatus(null);
+      }, 7000);
     } catch (error) {
       console.error(error);
       setUploadStatus('Error uploading image: ' + error.message);
