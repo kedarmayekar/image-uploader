@@ -45,7 +45,7 @@ const CloudImageUploader = () => {
       <button className='upload_image' onClick={handleUploadClick} disabled={!selectedImage}>
         Upload Image
       </button>
-      {uploadStatus && <p>{uploadStatus}</p>}
+     {uploadStatus && <div className="upload-image-status"><p>{uploadStatus}</p></div>}
     </div>
   );
 };
