@@ -22,7 +22,7 @@ const CloudImageUploader = () => {
       });
 
       const data = await response.json();
-
+      setUploadStatus(JSON.stringify(data));
       if (response.ok) {
         setUploadStatus('Image uploaded successfully!');
         document.getElementsByClassName('browse_image')[0].value = null;
