@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import HeroSection from './HeroSection';
-import CloudImageUploader from './CloudImageUploader';
+import ImageUploadComponent from './CloudUploaderV2';
 
 function App() {
   return (
     <React.StrictMode>
       <HeroSection />
-      <CloudImageUploader/>
+      <ImageUploadComponent/>
     </React.StrictMode>
   );
 }
