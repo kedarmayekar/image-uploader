@@ -22,8 +22,6 @@ function ImageUploadComponent() {
       });
       
       const data = await response.json();
-      console.log("data ",data)
-      console.log("response ",response)
       if (response.ok) {
         setUploadStatus('Image uploaded successfully!');
         document.getElementsByClassName('browse_image')[0].value = null;
